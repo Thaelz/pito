@@ -1,3 +1,6 @@
+#ifndef __UART_H
+#define __UART_H
+
 void uart_init();
 void uart_putc(unsigned char c);
 unsigned char uart_getc();
@@ -34,3 +37,4 @@ enum
     UART0_TDR    = (UART0_BASE + 0x8C),
 };
 
+#endif

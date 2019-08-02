@@ -1,4 +1,4 @@
-#include <common/types.h>
+#include <common/stdtypes.h>
 #include <kernel/uart.h>
 
 static inline void mmio_write(uint32_t reg, uint32_t data)
