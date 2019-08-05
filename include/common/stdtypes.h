@@ -1,4 +1,4 @@
-typedef int             size_t;
+typedef unsigned int      size_t;
 
 typedef unsigned int    uint32_t;
 typedef int              int32_t;

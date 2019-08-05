@@ -1,4 +1,5 @@
 #include <kernel/atag.h>
+#include <kernel/list.h>
 
 #ifndef __PAGE_H
 #define __PAGE_H
@@ -14,7 +15,7 @@ typedef struct {
 typedef struct page {
     uint32_t vaddr_mapped;  // The virtual address that maps to this page   
     page_flags_t flags;
-    struct page *next;
+    DEFINE_LINK(page);
 } page_t;
 
 void mem_init(atag_t * atags);
